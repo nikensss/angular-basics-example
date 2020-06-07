@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+
+<button [disabled]="clicked" (click)="handleClick()">
+  Click me
+</button>
+
+<div *ngFor="let boat of boats | async">
+  <app-boat [boat]="boat"></app-boat>
+</div>
+
+<p>{{23.232323 | number }}</p>
+<p>Ticks: {{clock.tick}}</p>
